@@ -1,26 +1,37 @@
 {
   "files": {
     "main.css": "/demengfoundation/static/css/main.2ea305b8.css",
-    "main.js": "/demengfoundation/static/js/main.b6aa2561.js",
-    "static/css/785.05ad99df.chunk.css": "/demengfoundation/static/css/785.05ad99df.chunk.css",
-    "static/js/785.0bb629fc.chunk.js": "/demengfoundation/static/js/785.0bb629fc.chunk.js",
+    "main.js": "/demengfoundation/static/js/main.c33bfbf0.js",
+    "static/css/986.79ebb786.chunk.css": "/demengfoundation/static/css/986.79ebb786.chunk.css",
+    "static/js/986.19876f8c.chunk.js": "/demengfoundation/static/js/986.19876f8c.chunk.js",
     "static/js/281.dc410c30.chunk.js": "/demengfoundation/static/js/281.dc410c30.chunk.js",
     "static/js/478.2e73b467.chunk.js": "/demengfoundation/static/js/478.2e73b467.chunk.js",
-    "static/js/333.8e4973b5.chunk.js": "/demengfoundation/static/js/333.8e4973b5.chunk.js",
+    "static/js/845.bc9ad12b.chunk.js": "/demengfoundation/static/js/845.bc9ad12b.chunk.js",
     "static/js/472.c9974ae3.chunk.js": "/demengfoundation/static/js/472.c9974ae3.chunk.js",
+    "static/media/2018.jpg": "/demengfoundation/static/media/2018.42f7ce7cd90899565e98.jpg",
+    "static/media/2022.jpg": "/demengfoundation/static/media/2022.591163b1263233b25771.jpg",
+    "static/media/2021.jpg": "/demengfoundation/static/media/2021.d5bacf9dcaee95178a14.jpg",
+    "static/media/2020.jpg": "/demengfoundation/static/media/2020.bda630cb109795910734.jpg",
     "static/media/card.png": "/demengfoundation/static/media/card.bce3086d5133983fb358.png",
+    "static/media/seats.jpg": "/demengfoundation/static/media/seats.34375c636daecb04bd9e.jpg",
+    "static/media/2019.jpg": "/demengfoundation/static/media/2019.70e82810267d6ff27fba.jpg",
+    "static/media/meng0.jpg": "/demengfoundation/static/media/meng0.979a8cf48e4f29aa5be4.jpg",
+    "static/media/seats2.jpg": "/demengfoundation/static/media/seats2.489b6cd8b9ebcdededd8.jpg",
+    "static/media/meng1.jpg": "/demengfoundation/static/media/meng1.e704399f49ad596844a4.jpg",
+    "static/media/demeng.svg": "/demengfoundation/static/media/demeng.eeee5bdc4b837e1a992b1424f3c90d65.svg",
     "index.html": "/demengfoundation/index.html",
+    "static/media/scroll-top.svg": "/demengfoundation/static/media/scroll-top.40a9c46a63744b32c04e11ee598eeaaf.svg",
     "main.2ea305b8.css.map": "/demengfoundation/static/css/main.2ea305b8.css.map",
-    "main.b6aa2561.js.map": "/demengfoundation/static/js/main.b6aa2561.js.map",
-    "785.05ad99df.chunk.css.map": "/demengfoundation/static/css/785.05ad99df.chunk.css.map",
-    "785.0bb629fc.chunk.js.map": "/demengfoundation/static/js/785.0bb629fc.chunk.js.map",
+    "main.c33bfbf0.js.map": "/demengfoundation/static/js/main.c33bfbf0.js.map",
+    "986.79ebb786.chunk.css.map": "/demengfoundation/static/css/986.79ebb786.chunk.css.map",
+    "986.19876f8c.chunk.js.map": "/demengfoundation/static/js/986.19876f8c.chunk.js.map",
     "281.dc410c30.chunk.js.map": "/demengfoundation/static/js/281.dc410c30.chunk.js.map",
     "478.2e73b467.chunk.js.map": "/demengfoundation/static/js/478.2e73b467.chunk.js.map",
-    "333.8e4973b5.chunk.js.map": "/demengfoundation/static/js/333.8e4973b5.chunk.js.map",
+    "845.bc9ad12b.chunk.js.map": "/demengfoundation/static/js/845.bc9ad12b.chunk.js.map",
     "472.c9974ae3.chunk.js.map": "/demengfoundation/static/js/472.c9974ae3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2ea305b8.css",
-    "static/js/main.b6aa2561.js"
+    "static/js/main.c33bfbf0.js"
   ]
 }
