@@ -1,0 +1,15 @@
+{
+  "short_name": "Demeng",
+  "name": "Demeng Foundation - works to build vibrant and inclusive future for promising leaders.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "544x474",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#fcb131",
+  "background_color": "#f1f2f3"
+}
