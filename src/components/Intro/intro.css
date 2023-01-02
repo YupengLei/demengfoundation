@@ -1,0 +1,422 @@
+#main {
+    margin-bottom: -190px;
+}
+
+.m-hero {
+    position: relative;
+    margin-top: -85px;
+    padding-top: 85px;
+    background: #f0f0f0
+}
+
+.m-hero::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: -25px;
+    right: -25px;
+    top: 0;
+    bottom: 0;
+    background-color: inherit;
+    pointer-events: none
+}
+
+@media screen and (min-width: 414px) and (max-width: 649px) {
+    .m-hero::before {
+        left: -30px;
+        right: -30px
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 989px) {
+    .m-hero::before {
+        left: -40px;
+        right: -40px
+    }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1299px) {
+    .m-hero::before {
+        left: -60px;
+        right: -60px
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1519px) {
+    .m-hero::before {
+        left: -60px;
+        right: -60px
+    }
+}
+
+@media screen and (min-width: 1520px) {
+    .m-hero::before {
+        left: -99em;
+        right: -99em
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .m-hero {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        padding-top: 0
+    }
+}
+
+@media screen and (min-width: 990px) and (-ms-high-contrast: none),
+screen and (min-width: 990px) and (-ms-high-contrast: active) {
+    .m-hero {
+        height: 100vh
+    }
+}
+
+.m-hero .a-scrollArrow {
+    position: absolute;
+    bottom: -40px;
+    left: 0
+}
+
+@media screen and (min-width: 650px) and (max-width: 989px) {
+    .m-hero .a-scrollArrow {
+        bottom: -58px
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .m-hero .a-scrollArrow {
+        bottom: 50px
+    }
+}
+.m-hero__body {
+    width: 100%
+}
+
+.m-hero--indepth .m-hero__body {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2em;
+    padding-right: 30px
+}
+
+@media screen and (max-width: 989px) {
+    .m-hero__body {
+        position: relative
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 989px) {
+    .m-hero__body {
+        padding-top: 20px
+    }
+
+    .m-hero--indepth .m-hero__body {
+        margin-top: 1em
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .m-hero__body {
+        width: 50%
+    }
+
+    .m-hero--indepth .m-hero__body {
+        position: absolute;
+        left: 56%;
+        width: 44vw;
+        margin-top: -2em
+    }
+}
+
+.m-hero__title {
+    margin-top: 25px
+}
+
+@media screen and (min-width: 990px) {
+    .m-hero__title {
+        margin: 0;
+        padding-right: calc((((100vw - 560px) / 12) * 1) + 0px)
+    }
+}
+
+
+.m-hero__title,
+.f-h2-hero {
+    font-size: 40px;
+    line-height: 35px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.m-hero__title::before,
+.m-hero__title::after,
+.f-h2-hero::before,
+.f-h2-hero::after {
+    content: "";
+    display: block;
+    width: 1px
+}
+
+.m-hero__title::before,
+.f-h2-hero::before {
+    padding-top: 2.9px
+}
+
+.m-hero__title::after,
+.f-h2-hero::after {
+    margin-bottom: -2.9px
+}
+
+@media screen and (min-width: 650px) {
+
+    .m-hero__title,
+    .f-h2-hero {
+        font-size: 60px;
+        line-height: 55px;
+        font-weight: 700
+    }
+
+    .m-hero__title::before,
+    .f-h2-hero::before {
+        padding-top: 5.6px
+    }
+
+    .m-hero__title::after,
+    .f-h2-hero::after {
+        margin-bottom: -5.6px
+    }
+}
+
+@media screen and (max-height: 745px) and (min-width: 990px) {
+    .m-hero__title {
+        font-size: 50px;
+        line-height: 45px
+    }
+}
+
+@media screen and (max-height: 520px) and (min-width: 990px) {
+    .m-hero__title {
+        font-size: 40px;
+        line-height: 35px
+    }
+}
+
+
+.a-link--readmore{
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: normal
+}
+
+@media screen and (min-width: 990px) {
+
+    .a-input,
+    .a-link--readmore,
+    .a-select select,
+    .m-filtersMobile__sorting .m-filters__sorting__button,
+    .m-filtersMobile__footer .a-switchButton__label,
+    .m-pageIntro--rsvpPreview .m-pageIntro__intro p,
+    body,
+    .g-megaNav__newsletter .g-newsletterCta__col-full p,
+    .f-body {
+        font-size: 17px;
+        line-height: 30px;
+        font-weight: normal
+    }
+
+    .a-input::before,
+    .a-link--readmore::before,
+    .a-select select::before,
+    .m-filtersMobile__sorting .m-filters__sorting__button::before,
+    .m-filtersMobile__footer .a-switchButton__label::before,
+    .m-pageIntro--rsvpPreview .m-pageIntro__intro p::before,
+    body::before,
+    .g-megaNav__newsletter .g-newsletterCta__col-full p::before,
+    .f-body::before {
+        padding-top: 8.71px
+    }
+
+    .a-input::after,
+    .a-link--readmore::after,
+    .a-select select::after,
+    .m-filtersMobile__sorting .m-filters__sorting__button::after,
+    .m-filtersMobile__footer .a-switchButton__label::after,
+    .m-pageIntro--rsvpPreview .m-pageIntro__intro p::after,
+    body::after,
+    .g-megaNav__newsletter .g-newsletterCta__col-full p::after,
+    .f-body::after {
+        margin-bottom: -8.71px
+    }
+}
+
+.a-link--readmore {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    margin-top: 5px;
+    color: #141414;
+    
+}
+
+@media screen and (min-width: 990px) {
+    .a-link--readmore {
+        margin-top: 20px
+    }
+}
+
+.a-link--readmore i {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #757575;
+    font-style: normal !important;
+    transition: border-color 0.16s cubic-bezier(0.545, 0.03, 0.395, 0.965);
+    font-weight: 300;
+}
+
+.a-link--readmore:hover i {
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.a-link--readmore.a-link--readmore--standalone {
+    margin-bottom: 10px
+}
+
+.m-hero__image {
+    width: 100vw;
+    height: calc(100vw * 0.666667);
+    /*margin-left: -25px;*/
+    margin-top: 55px;
+    position: relative
+}
+
+.m-hero--indepth .m-hero__image {
+    margin-top: 35px
+}
+
+@media screen and (max-width: 767px) {
+    .m-hero__image {
+        margin-left: -18px
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .m-hero__image {
+        margin-top: 95px;
+        margin-left: -30px
+    }
+
+    .m-hero--indepth .m-hero__image {
+        margin-top: 55px
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+    .m-hero__image {
+        margin-top: 95px;
+        margin-left: -60px
+    }
+
+    .m-hero--indepth .m-hero__image {
+        margin-top: 55px
+    }
+}
+
+@media screen and (min-width: 1600px)  {
+    .m-hero__image {
+        margin-top: 95px;
+        margin-left: -100px
+    }
+
+    .m-hero--indepth .m-hero__image {
+        margin-top: 55px
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .m-hero__image {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 50vw;
+        height: 100%;
+        margin: 0;
+        overflow: hidden
+    }
+
+    .m-hero--indepth .m-hero__image {
+        left: initial;
+        right: 50%;
+        margin-top: 0
+    }
+
+    .m-hero__image::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%)
+    }
+}
+
+@media screen and (min-width: 990px) and (-ms-high-contrast: none),
+screen and (min-width: 990px) and (-ms-high-contrast: active) {
+    .m-hero__image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%
+    }
+}
+
+.m-hero__image img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100.2%;
+    width: auto;
+    transform: translate3d(-50%, -50%, 0);
+    
+}
+
+@media screen and (min-width: 990px) {
+    .m-hero__image img {
+        transform: none;
+        left: 0;
+        top: 0;
+        height: 100.1%;
+        width: 100%;
+        object-fit: cover
+    }
+}
+
+@media screen and (min-width: 990px) and (-ms-high-contrast: none),
+screen and (min-width: 990px) and (-ms-high-contrast: active) {
+    .m-hero__image img {
+        display: none
+    }
+}
+
+.m-hero__copy--container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    z-index: 5
+}
+
+.m-hero--indepth .m-hero__copy--container {
+    margin-left: -40px;
+    left: 0;
+    width: 100vw
+}
+
+@media screen and (min-width: 990px) {
+    .m-hero--indepth .m-hero__copy--container {
+        left: 51%;
+        bottom: 8px;
+        margin-left: 0;
+        width: 50vw
+    }
+}

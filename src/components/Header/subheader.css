@@ -1,0 +1,503 @@
+#a17 {
+    margin-right: auto;
+    margin-left: auto
+}
+
+
+#a17 {
+    --highlightColor: #05d192;
+    position: relative;
+    overflow-anchor: none
+}
+
+.g-header {
+    position: relative;
+    width: 100%;
+    z-index: 1001;
+}
+
+.g-header,
+.g-header__wrapper {
+    height: 70px
+}
+
+.has-transition .g-header__wrapper {
+    transition: background-color 0.34s cubic-bezier(0.545, 0.03, 0.395, 0.965), transform 0.34s cubic-bezier(0.545, 0.03, 0.395, 0.965)
+}
+
+.g-megaNav__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #040404;
+    transition: opacity 0.16s cubic-bezier(0.545, 0.03, 0.395, 0.965), visibility 0.16s cubic-bezier(0.545, 0.03, 0.395, 0.965);
+    visibility: hidden;
+    opacity: 0
+}
+
+@media screen and (min-width: 990px) {
+
+    .g-header,
+    .g-header__wrapper {
+        height: 85px
+    }
+}
+
+.g-header__wrapper {
+    position: absolute;
+    left: 50%;
+    margin-left: -50vw;
+    width: 100vw;
+    background: transparent;
+    z-index: 100;
+    will-change: transform;
+    transform: translateY(0);
+    transition: background-color 0.34s cubic-bezier(0.545, 0.03, 0.395, 0.965)
+}
+
+.g-header__container {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between
+}
+@media screen and (max-width: 768px) {
+    .g-megaNav__container,#a17,.g-header__search__container,.g-header__container {
+        width: calc(100vw - 38px)
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .g-megaNav__container,#a17,.g-header__search__container,.g-header__container {
+        width: calc(100vw - 60px)
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+    .g-megaNav__container,#a17,.g-header__search__container,.g-header__container {
+        width: calc(100vw - 120px)
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .g-megaNav__container,#a17,.g-header__search__container,.g-header__container {
+        width: calc(100vw - 200px);
+        padding-right: 0;
+        padding-left: 0
+    }
+}
+
+.g-header__logo {
+    width: 200px;
+    height: 100px;
+    flex-shrink: 0;
+    color: #141414
+}
+
+.g-header__logo svg {
+    width: 100%;
+    height: 100%;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px)
+}
+
+.g-header__nav {
+    position: relative;
+    height: 100%;
+    white-space: nowrap;
+    padding-right: 90px
+}
+
+@media screen and (min-width: 1300px) {
+    .g-header__nav {
+        padding-right: 110px
+    }
+}
+
+@media screen and (max-width: 989px) and (-ms-high-contrast: none),
+screen and (max-width: 989px) and (-ms-high-contrast: active) {
+    .g-header__nav {
+        order: 3
+    }
+}
+
+.g-header__nav__link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase
+}
+
+@media screen and (min-width: 990px) {
+    .g-header__nav__link {
+        font-size: 17px;
+        line-height: 19px;
+        font-weight: 700;
+        letter-spacing: .05em
+    }
+}
+
+.g-header__nav__link {
+    position: relative;
+    height: 100%;
+    margin-left: 20px;
+    align-items: center;
+    display: none
+}
+
+@media screen and (min-width: 990px) {
+    .g-header__nav__link {
+        display: inline-flex
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .g-header__nav__link {
+        margin-left: 30px
+    }
+}
+
+.g-header.has-active .g-header__nav__link {
+    opacity: 0.67;
+    transition: color 0.16s cubic-bezier(0.545, 0.03, 0.395, 0.965)
+}
+
+.g-header__nav__link:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.g-header.has-active .g-header__nav__link.is-active,
+.g-header.has-active .g-header__nav__link:hover {
+    opacity: 1
+}
+
+.g-header__nav__link--btn {
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    position: absolute;
+    padding: 0;
+    display: inline-flex
+}
+
+.g-header__nav__link--btn,
+.g-header__search__submit,
+.g-header__search__close {
+    position: absolute;
+    padding: 0;
+    display: inline-flex
+}
+
+@media screen and (max-width: 989px) {
+
+    .g-header__nav__link--btn,
+    .g-header__search__submit,
+    .g-header__search__close {
+        margin-left: 22px
+    }
+}
+
+.g-header__nav__link--btn span,
+.g-header__search__submit span,
+.g-header__search__close span {
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none
+}
+
+.g-header__nav__link--search,
+.g-header__search__submit {
+    color: #141414;
+    transition: color 0.16s cubic-bezier(0.545, 0.03, 0.395, 0.965)
+}
+
+.g-header__nav__link--search svg,
+.g-header__search__submit svg {
+    width: 24px;
+    height: 19px;
+}
+
+
+.g-header__search__submit,
+.g-header__search__close,
+.g-header__nav__link--search,
+.g-header__nav__link--megaNavToggle {
+    position: absolute;
+    right: 44px;
+    height: 100%;
+    top: 0;
+    align-items: center
+}
+
+@media screen and (min-width: 990px) and (max-width: 1299px) {
+
+    .g-header__search__submit,
+    .g-header__search__close,
+    .g-header__nav__link--search,
+    .g-header__nav__link--megaNavToggle {
+        right: 42px
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    .g-header__search__submit,
+    .g-header__search__close,
+    .g-header__nav__link--search,
+    .g-header__nav__link--megaNavToggle {
+        right: 52px
+    }
+}
+
+.s-search-focus .g-header__search,
+.s-search-open:not(.s-nav-open) .g-header__search {
+    background-color: #05d192;
+    transition-delay: 0s
+}
+
+.s-search-focus .g-header__search,
+.s-search-open:not(.s-nav-open) .g-header__search {
+    background-color: #05d192;
+    transition-delay: 0s
+}
+
+.g-header__search__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+.g-header__search__container form {
+    width: 100%
+}
+
+.g-header__search__container {
+    margin-right: auto;
+    margin-left: auto
+}
+
+.a-input {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: normal;
+    padding-bottom: 8px;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #949494;
+    outline: none;
+    transition: border-color 0.16s cubic-bezier(0.545, 0.03, 0.395, 0.965);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+@media screen and (min-width: 990px) {
+    .a-input {
+        font-size: 17px;
+        line-height: 30px;
+        font-weight: normal
+    }
+}
+
+.a-input:hover {
+    border-color: #1f1f1f
+}
+
+.a-input:focus {
+    border-color: #000;
+    border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.a-input::-webkit-input-placeholder {
+    color: #141414
+}
+
+.a-input:-moz-placeholder {
+    color: #141414
+}
+
+.a-input::-moz-placeholder {
+    color: #141414
+}
+
+.a-input:-ms-input-placeholder {
+    color: #141414
+}
+
+@media screen and (min-width: 990px) {
+    .a-input {
+        padding-bottom: 18px
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .a-input {
+        font-size: 16px
+    }
+}
+
+.a-input::-ms-clear {
+    display: none
+}
+
+.g-header__search__input.a-input {
+    width: calc(100% - 44px);
+    padding-bottom: 10px;
+    margin-top: 10px;
+    align-items: center
+}
+
+@media screen and (max-width: 649px) {
+    .g-header__search__input.a-input {
+        font-size: 16px
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .g-header__search__input.a-input {
+        width: calc(100% - 52px)
+    }
+}
+
+.g-header__search__input.a-input {
+    color: var(--black);
+    border-color:var(--black)
+}
+
+.g-header__search__input.a-input::-webkit-input-placeholder {
+    color: var(--black)
+}
+
+.g-header__search__input.a-input:-moz-placeholder {
+    color: var(--black)
+}
+
+.g-header__search__input.a-input::-moz-placeholder {
+    color: var(--black)
+}
+
+.g-header__search__input.a-input:-ms-input-placeholder {
+    color: var(--black)
+}
+
+.g-header__search__submit,
+.g-header__search__close,
+.g-header__nav__link--search,
+.g-header__nav__link--megaNavToggle {
+    position: absolute;
+    right: 44px;
+    height: 100%;
+    top: 0;
+    align-items: center
+}
+
+@media screen and (min-width: 990px) and (max-width: 1299px) {
+
+    .g-header__search__submit,
+    .g-header__search__close,
+    .g-header__nav__link--search,
+    .g-header__nav__link--megaNavToggle {
+        right: 42px
+    }
+}
+
+@media screen and (min-width: 1300px) {
+
+    .g-header__search__submit,
+    .g-header__search__close,
+    .g-header__nav__link--search,
+    .g-header__nav__link--megaNavToggle {
+        right: 52px
+    }
+}
+
+.g-header__search__close, .g-header__search__submit {
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none
+}
+
+.g-header__search__close,
+.g-header__nav__link--megaNavToggle {
+    right: 0
+}
+
+.g-header__navIcon {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    color: #141414;
+    transition: color 0.16s cubic-bezier(0.545, 0.03, 0.395, 0.965)
+}
+
+.g-header__navIcon i {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    height: 2px
+}
+
+.g-header__navIcon i:hover{
+    cursor: pointer;
+}
+
+.g-header__search {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--golden);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.16s cubic-bezier(0.545, 0.03, 0.395, 0.965), visibility 0.16s cubic-bezier(0.545, 0.03, 0.395, 0.965), background-color 0.16s cubic-bezier(0.545, 0.03, 0.395, 0.965) 0.08s
+}
+
+.fa-bars {
+    width: 18px;
+    height: 18px;
+}
+
+.fa-xmark {
+    width: 25px;
+    height: 25px;
+    margin-top: -2px;
+}
+
+
+
+
+.g-header__search__close {
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none
+}
+
+.g-header__search__close,
+.g-header__nav__link--megaNavToggle {
+    right: 0
+}
+
+

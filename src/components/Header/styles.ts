@@ -4,6 +4,8 @@ import { MenuOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")`
   padding: 1rem 0.5rem;
+  border-bottom: 1px solid #d9d9d9;
+
 
   .ant-row-space-between {
     align-items: center;
@@ -33,7 +35,7 @@ export const CustomNavLink = styled("div")`
   }
 `;
 
-export const ContactWrapper = styled("div")<any>`
+export const ContactWrapper = styled("div") <any>`
   cursor: pointer;
   width: ${(p) => (p.width ? "100%" : "110px")};
   font-weight: 700;
@@ -43,19 +45,19 @@ export const ContactWrapper = styled("div")<any>`
 `;
 
 export const Burger = styled("div")`
-  @media only screen and (max-width: 890px) {
+  @media only screen and (max-width: 1024px) {
     display: block;
   }
 
   display: none;
 
   svg {
-    fill: #2e186a;
+    fill: var(--buttonBg);
   }
 `;
 
 export const NotHidden = styled("div")`
-  @media only screen and (max-width: 890px) {
+  @media only screen and (max-width: 1024px) {
     display: none;
   }
 `;
@@ -67,10 +69,11 @@ export const Menu = styled("h5")`
 `;
 
 export const CustomNavLinkSmall = styled(NavLink)`
-  font-size: 1.2rem;
-  color: #18216d;
+  font-size: 17px;
+  color: #20201F;
   transition: color 0.2s ease-in;
   margin: 0.5rem 2rem;
+
 
   @media only screen and (max-width: 768px) {
     margin: 1.25rem 2rem;
@@ -86,7 +89,7 @@ export const Label = styled("span")`
   align-items: baseline;
 `;
 
-export const Outline = styled(MenuOutlined)<any>`
+export const Outline = styled(MenuOutlined) <any>`
   font-size: 22px;
 `;
 
@@ -97,8 +100,9 @@ export const Span = styled("span")`
   &:hover,
   &:active,
   &:focus {
-    color: rgb(255, 130, 92);
+    color: var(--buttonHoverBg);
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
+    text-decoration: var(--buttonHoverBg) 3px solid underline;
+    text-underline-offset: 40px;
   }
 `;

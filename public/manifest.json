@@ -1,25 +1,15 @@
 {
-  "short_name": "Landy",
-  "name": "Landy - React Template",
+  "short_name": "Demeng",
+  "name": "Demeng Foundation - works to build vibrant and inclusive future for promising leaders.",
   "icons": [
     {
-      "src": "img/icons/logo192.png",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "img/icons/logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "img/icons/logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "favicon.ico",
+      "sizes": "544x474",
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#fcb131",
+  "background_color": "#f1f2f3"
 }

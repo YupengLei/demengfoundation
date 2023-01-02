@@ -1,30 +1,57 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import routes from "./config";
 import { Styles } from "../styles/styles";
+import SubFooter from "../components/SubscriptionBlock/subFooter";
+import SubHeader from "../components/Header/subheader";
+
 
 const Router = () => {
-  return (
-    <Suspense fallback={null}>
-      <Styles />
-      <Header />
-      <Switch>
-        {routes.map((routeItem) => {
-          return (
-            <Route
-              key={routeItem.component}
-              path={routeItem.path}
-              exact={routeItem.exact}
-              component={lazy(() => import(`../pages/${routeItem.component}`))}
-            />
-          );
-        })}
-      </Switch>
-      <Footer />
-    </Suspense>
-  );
+	const [visibleDrawer, setVisibilityDrawer] = useState(false);
+	const [visibleSearch, setVisibilitySearch] = useState(false);
+
+	const showDrawer = () => {
+		setVisibilityDrawer(true);
+		setVisibilitySearch(true);
+	};
+
+	const onClose = () => {
+		setVisibilityDrawer(false);
+		setVisibilitySearch(false);
+	};
+
+	const showSearch = () => {
+		setVisibilitySearch(true);
+	};
+
+	return (
+		<Suspense fallback={null}>
+			<Styles />
+			<SubHeader
+				showDrawer={showDrawer}
+				showSearch={showSearch}
+				onClose={onClose}
+				visibleDrawer={visibleDrawer}
+				visibleSearch={visibleSearch}
+			/>
+			{!visibleDrawer ?
+				<Switch>
+					{routes.map((routeItem) => {
+						return (
+							<Route
+								key={routeItem.component}
+								path={routeItem.path}
+								exact={routeItem.exact}
+								component={lazy(() => import(`../pages/${routeItem.component}`))}
+							/>
+						);
+					})}
+				</Switch>
+				: null}
+
+			<SubFooter />
+		</Suspense>
+	);
 };
 
 export default Router;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ScrollUpContainer = styled("div")<any>`
+export const ScrollUpContainer = styled("div") <any>`
   padding: 10px;
   position: fixed;
   right: 30px;
@@ -19,7 +19,7 @@ export const ScrollUpContainer = styled("div")<any>`
   &:hover,
   &:active,
   &:focus {
-    background: rgb(224, 224, 224);
+    background: #f1f2f3;
   }
 
   @media screen and (max-width: 1240px) {

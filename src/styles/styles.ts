@@ -14,11 +14,32 @@ export const Styles = createGlobalStyle`
         font-style: normal;
     }
 
+    @font-face {
+        font-family: "GT America Bold";
+        src: url("/fonts/GT-America-Compressed-Bold.ttf") format("truetype");
+        font-style: normal;
+    }
+
+    :root {
+        --buttonBg: #50A4AB;
+        --buttonHoverBg: #fff;
+        --formBg: #17181c;
+        --inputBg: #2e3138;
+        --inputDisableBg: #2e3138;
+        --inputBorder: #5c6270;
+        --pColor: #fff;
+        --golden: #fcb131;
+        --darkblue: #262D47;
+        --black: #20201F;
+        --pink: #CA7359;
+    }
+
+    
 
     body,
     html,
     a {
-        font-family: 'Motiva Sans Light', sans-serif;
+        font-family: 'Oswald', sans-serif;
     }
 
 
@@ -27,7 +48,7 @@ export const Styles = createGlobalStyle`
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
+        background: #f1f2f3;
         overflow-x: hidden;
     }
 
@@ -57,8 +78,8 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Motiva Sans Bold', serif;
-        color: #18216d;
+        font-family: 'Oswald', sans-serif;
+        color: #20201F;
         font-size: 56px;
         line-height: 1.18;
 
@@ -72,7 +93,7 @@ export const Styles = createGlobalStyle`
     }
 
     p {
-        color: #18216d;
+        color: #20201F;
         font-size: 21px;        
         line-height: 1.41;
     }
@@ -109,4 +130,7 @@ export const Styles = createGlobalStyle`
     .ant-drawer-content-wrapper {
         width: 300px !important;
     }
+
+    
+
 `;

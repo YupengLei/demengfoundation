@@ -1,46 +1,59 @@
 {
-  "name": "demeng",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@types/node": "^15.14.9",
-    "@types/react": "^17.0.52",
-    "@types/react-dom": "^17.0.18",
-    "@types/react-router-dom": "^5.3.3",
-    "@types/styled-components": "^5.1.26",
-    "antd": "^4.24.6",
-    "axios": "^0.21.4",
-    "i18next": "^19.9.2",
-    "i18next-browser-languagedetector": "^6.1.8",
-    "i18next-xhr-backend": "^3.2.2",
-    "react": "^18.2.0",
-    "react-awesome-reveal": "^3.8.1",
-    "react-dom": "^18.2.0",
-    "react-i18next": "^11.18.6",
-    "react-router-dom": "^5.3.4",
-    "react-scripts": "5.0.1",
-    "styled-components": "^5.3.6",
-    "typescript": "^4.9.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"homepage": "http://yupenglei.github.io/demengfoundation",
+	"name": "demeng",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@amcharts/amcharts5": "^5.2.45",
+		"@amcharts/amcharts5-geodata": "^5.1.0",
+		"@fortawesome/fontawesome-svg-core": "^6.2.1",
+		"@fortawesome/free-brands-svg-icons": "^6.2.1",
+		"@fortawesome/free-solid-svg-icons": "^6.2.1",
+		"@fortawesome/react-fontawesome": "^0.2.0",
+		"@types/node": "^15.14.9",
+		"@types/react": "^17.0.52",
+		"@types/react-router-dom": "^5.3.3",
+		"@types/styled-components": "^5.1.26",
+		"antd": "^4.24.6",
+		"axios": "^0.21.4",
+		"i18next": "^19.9.2",
+		"i18next-browser-languagedetector": "^6.1.8",
+		"i18next-xhr-backend": "^3.2.2",
+		"react": "^18.2.0",
+		"react-awesome-reveal": "^3.8.1",
+		"react-dom": "^18.2.0",
+		"react-i18next": "^11.18.6",
+		"react-responsive-carousel": "^3.2.23",
+		"react-router-dom": "^5.3.4",
+		"react-scripts": "5.0.1",
+		"styled-components": "^5.3.6",
+		"typescript": "^4.9.4"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@types/react-dom": "^18.0.10",
+		"gh-pages": "^4.0.0"
+	}
 }
