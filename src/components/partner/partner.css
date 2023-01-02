@@ -57,7 +57,7 @@
   }
   
   .myCarousel p {
-    font-weight: 100 !important;
+    font-weight: 400 !important;
     line-height: 29px !important;
     color: var(--pink);
     font-size: 15px;

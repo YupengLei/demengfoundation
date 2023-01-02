@@ -69,10 +69,12 @@ const Who = () => {
                                         
 
 
-                                        <p className="a-profileCard__description">
-                                        </p>
+                                        
                                         <p>Sally devoted herself to many programs of the Demeng foundation with great passion and leadship. </p>
                                             <p className="a-profileCard__description">Some of her achievements:</p> 
+                                            <p className="a-profileCard__description">
+                                            Spearheaded and led the creation of <a href="http://www.ypractice.org" target="_blank" rel="noreferrer" style={{fontWeight: "700", color: "var(--darkblue)"}}>YPractice.org</a>, an online music sharing platform for students;
+                                        </p>
                                             <p className="a-profileCard__description">
                                             Designed music lesson plans;</p>
                                         <p className="a-profileCard__description">Mentored 9 to 12 year old students to explore their music talents and hone instrument skills;</p>

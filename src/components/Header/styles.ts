@@ -100,9 +100,8 @@ export const Span = styled("span")`
   &:hover,
   &:active,
   &:focus {
-    color: var(--buttonHoverBg);
+    opacity: 0.5;
     text-underline-position: under;
-    text-decoration: var(--buttonHoverBg) 3px solid underline;
-    text-underline-offset: 40px;
+    text-decoration: var(--black) 3px solid underline;
   }
 `;
