@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/demengfoundation/static/css/main.2ea305b8.css",
-    "main.js": "/demengfoundation/static/js/main.c33bfbf0.js",
+    "main.js": "/demengfoundation/static/js/main.f8d585d0.js",
     "static/css/986.79ebb786.chunk.css": "/demengfoundation/static/css/986.79ebb786.chunk.css",
     "static/js/986.19876f8c.chunk.js": "/demengfoundation/static/js/986.19876f8c.chunk.js",
     "static/js/281.dc410c30.chunk.js": "/demengfoundation/static/js/281.dc410c30.chunk.js",
@@ -22,7 +22,7 @@
     "index.html": "/demengfoundation/index.html",
     "static/media/scroll-top.svg": "/demengfoundation/static/media/scroll-top.40a9c46a63744b32c04e11ee598eeaaf.svg",
     "main.2ea305b8.css.map": "/demengfoundation/static/css/main.2ea305b8.css.map",
-    "main.c33bfbf0.js.map": "/demengfoundation/static/js/main.c33bfbf0.js.map",
+    "main.f8d585d0.js.map": "/demengfoundation/static/js/main.f8d585d0.js.map",
     "986.79ebb786.chunk.css.map": "/demengfoundation/static/css/986.79ebb786.chunk.css.map",
     "986.19876f8c.chunk.js.map": "/demengfoundation/static/js/986.19876f8c.chunk.js.map",
     "281.dc410c30.chunk.js.map": "/demengfoundation/static/js/281.dc410c30.chunk.js.map",
@@ -32,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.2ea305b8.css",
-    "static/js/main.c33bfbf0.js"
+    "static/js/main.f8d585d0.js"
   ]
 }
