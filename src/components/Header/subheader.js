@@ -7,15 +7,9 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import logo from "../../img/svg/demeng.svg";
 
 import { useState } from "react";
-import { Row, Col, Drawer } from "antd";
-import { withTranslation } from "react-i18next";
-import Container from "../../common/Container";
-import { Button } from "../../common/Button";
+import { Col, Drawer } from "antd";
+
 import {
-    HeaderSection,
-    LogoContainer,
-    Burger,
-    NotHidden,
     Menu,
     CustomNavLinkSmall,
     Label,

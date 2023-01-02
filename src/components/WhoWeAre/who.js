@@ -42,7 +42,7 @@ const Who = () => {
                                         <p className="a-profileCard__description">
                                         Sponsored the Demeng Music Performance Endowed Fund in University of Pennsylvania, Arts and Sciences in 2020;</p>
                                         <p className="a-profileCard__description">Sponsored 2022 S.-T. Yau High School Science Award (North America);</p>
-                                        <p className="a-profileCard__description">Donated to MIT, Penn State University, Curtis Music School, Princeton Science School, Tsinghua University, Peking University, Guangdong University of Foreign Studies, Guangdong Jiaying University and others.
+                                        <p className="a-profileCard__description">Donated to MIT, University of Pennsylvania, Curtis Music School, Princeton International School of Mathematics and Science, Tsinghua University, Peking University, Guangdong University of Foreign Studies, Guangdong Jiaying University and others.
 
                                         </p>
                                     </div>
@@ -86,7 +86,7 @@ const Who = () => {
                                     </div>
                                     <figure className="a-profileCard__image">
                                         <div className="p-title">
-                                        <h3>SALLY</h3>
+                                        <h3>SALLY Yiran Deng</h3>
                                         <span className="a-profileCard__subtitle"></span>
                                         </div>
                                         <img

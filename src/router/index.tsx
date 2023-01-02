@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense } from "react";
 import { Switch, Route } from "react-router-dom";
 import routes from "./config";
 import { Styles } from "../styles/styles";
@@ -7,7 +7,7 @@ import SubHeader from "../components/Header/subheader";
 
 
 const Router = () => {
-	const [visibleDrawer, setVisibilityDrawer] = useState(false);
+	/*const [visibleDrawer, setVisibilityDrawer] = useState(false);
 	const [visibleSearch, setVisibilitySearch] = useState(false);
 
 	const showDrawer = () => {
@@ -22,7 +22,7 @@ const Router = () => {
 
 	const showSearch = () => {
 		setVisibilitySearch(true);
-	};
+	};*/
 
 	return (
 		<Suspense fallback={null}>
