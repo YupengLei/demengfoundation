@@ -6,21 +6,67 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import logo from "../../img/svg/demeng.svg";
 
+import { useState } from "react";
+import { Row, Col, Drawer } from "antd";
+import { withTranslation } from "react-i18next";
+import Container from "../../common/Container";
+import { Button } from "../../common/Button";
+import {
+    HeaderSection,
+    LogoContainer,
+    Burger,
+    NotHidden,
+    Menu,
+    CustomNavLinkSmall,
+    Label,
+    Outline,
+    Span,
+} from "./styles";
 
 
 
-const SubHeader = (props) => {
 
+const SubHeader = () => {
+
+    const [visible, setVisibility] = useState(false);
+
+    const showDrawer = () => {
+        console.log("open")
+        setVisibility(!visible);
+    };
+
+    const onClose = () => {
+        console.log("close")
+        setVisibility(!visible);
+    };
+
+    const MenuItem = () => {
+
+        return (
+            <>
+                <CustomNavLinkSmall onClick={() => scrollTo("how")}>
+                    <Span>HOW WE WORK</Span>
+                </CustomNavLinkSmall>
+                <CustomNavLinkSmall onClick={() => scrollTo("what")}>
+                    <Span>WHAT WE DO</Span>
+                </CustomNavLinkSmall>
+                <CustomNavLinkSmall onClick={() => scrollTo("who")}>
+                    <Span>WHO WE ARE</Span>
+                </CustomNavLinkSmall>
+
+            </>
+        );
+    };
 
     const scrollTo = (id) => {
         const element = document.getElementById(id);
         element.scrollIntoView({
             behavior: "smooth",
         });
-        //setVisibility(false);
+        setVisibility(false);
     };
 
-    const searchStyleClose = {
+    /*const searchStyleClose = {
         visibility: "hidden",
         opacity: "0"
     }
@@ -28,7 +74,7 @@ const SubHeader = (props) => {
     const searchStyleOpen = {
         visibility: "visible",
         opacity: "1",
-    }
+    }*/
 
 
     return (
@@ -47,7 +93,7 @@ const SubHeader = (props) => {
 
 
 
-                        <nav className="g-header__nav" >
+                        <nav className="g-header__nav" style={{display: visible ? "none" : "block"}} >
 
                             <div className="g-header__nav__link "
                                 data-mainnav-link="" data-nav-item="how-we-work" onClick={() => scrollTo("how")}>How We Work</div>
@@ -56,13 +102,13 @@ const SubHeader = (props) => {
                             <div className="g-header__nav__link "
                                 data-mainnav-link="" data-nav-item="who-we-are" onClick={() => scrollTo("who")}>Who We Are</div>
                             <button className="g-header__nav__link g-header__nav__link--btn g-header__nav__link--search"
-                                data-search-toggle="" aria-label="Open Search Bar" onClick={props.showSearch}>
+                                data-search-toggle="" aria-label="Open Search Bar" >
                                 <span className="visually-hidden">search</span>
                                 <figure className="g-header__navIcon" aria-hidden="true"><i><FontAwesomeIcon icon={faMagnifyingGlass} /></i></figure>
 
                             </button>
                             <button className="g-header__nav__link g-header__nav__link--btn g-header__nav__link--megaNavToggle"
-                                data-meganav-toggle="" aria-label="Open Main Navigation" onClick={props.showDrawer}>
+                                data-meganav-toggle="" aria-label="Open Main Navigation" onClick={showDrawer}>
                                 <span className="visually-hidden">open navigation</span>
                                 <figure className="g-header__navIcon" aria-hidden="true"><i><FontAwesomeIcon icon={faBars} /></i></figure>
                             </button>
@@ -70,7 +116,7 @@ const SubHeader = (props) => {
 
                         </nav>
 
-                        <div className="g-header__search" style={!props.visibleSearch ? searchStyleClose : searchStyleOpen}>
+                        <div className="g-header__search" >
                             <div className="g-header__search__container">
                                 <form action="" >
                                     <input className="a-input g-header__search__input" placeholder="Search" aria-label="Search input" name="q"
@@ -81,7 +127,7 @@ const SubHeader = (props) => {
 
                                     </button>
                                     <button className="g-header__search__close" type="button" data-meganav-toggle=""
-                                        aria-label="Close search and navigation" onClick={props.onClose}>
+                                        aria-label="Close search and navigation" >
                                         <span className="visually-hidden">close navigation</span>
                                         <figure className="g-header__navIcon" aria-hidden="true"><i><FontAwesomeIcon icon={faXmark} /></i></figure>
                                     </button>
@@ -90,7 +136,19 @@ const SubHeader = (props) => {
 
                             </div>
                         </div>
-
+                        <Drawer closable={false} open={visible} onClose={onClose}>
+                            <Col style={{ marginBottom: "2.5rem" }}>
+                                <Label onClick={onClose}>
+                                    <Col span={12}>
+                                        <Menu>Menu</Menu>
+                                    </Col>
+                                    <Col span={12}>
+                                        <Outline />
+                                    </Col>
+                                </Label>
+                            </Col>
+                            <MenuItem />
+                        </Drawer>
 
                     </div>
                 </div>
@@ -105,3 +163,9 @@ const SubHeader = (props) => {
 }
 
 export default SubHeader;
+
+
+/*
+onClick={props.showSearch}
+style={!props.visibleSearch ? searchStyleClose : searchStyleOpen}
+*/

@@ -28,26 +28,20 @@ const Router = () => {
 		<Suspense fallback={null}>
 			<Styles />
 			<SubHeader
-				showDrawer={showDrawer}
-				showSearch={showSearch}
-				onClose={onClose}
-				visibleDrawer={visibleDrawer}
-				visibleSearch={visibleSearch}
 			/>
-			{!visibleDrawer ?
-				<Switch>
-					{routes.map((routeItem) => {
-						return (
-							<Route
-								key={routeItem.component}
-								path={routeItem.path}
-								exact={routeItem.exact}
-								component={lazy(() => import(`../pages/${routeItem.component}`))}
-							/>
-						);
-					})}
-				</Switch>
-				: null}
+
+			<Switch>
+				{routes.map((routeItem) => {
+					return (
+						<Route
+							key={routeItem.component}
+							path={routeItem.path}
+							exact={routeItem.exact}
+							component={lazy(() => import(`../pages/${routeItem.component}`))}
+						/>
+					);
+				})}
+			</Switch>
 
 			<SubFooter />
 		</Suspense>
