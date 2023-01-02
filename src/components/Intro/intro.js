@@ -1,4 +1,6 @@
 import "./intro.css";
+import seats from "../../img/svg/seats.jpg";
+import seats2 from "../../img/svg/seats2.jpg";
 
 const Intro = () => {
     const scrollTo = (id) => {
@@ -22,14 +24,14 @@ const Intro = () => {
 
                         <div className="m-hero__image"
                             style={{
-                                backgroundImage: `url(${process.env.PUBLIC_URL + "/img/svg/seats.jpg"})`,
-                                title: "A family fleeing the Donetsk region waits for a train to Lviv in Slavyansk, Ukraine, on May 4, 2022. Photo credit: © Iva Zimova/Panos/Redux"
+                                backgroundImage: `url(${seats})`,
+                                
                             }}>
                             <picture>
                                 <source
-                                    srcSet={process.env.PUBLIC_URL + "/img/svg/seats2.jpg"}
+                                    srcSet={seats2}
                                     media="(max-width: 989px)" />
-                                <img src={process.env.PUBLIC_URL + "/img/svg/seats.jpg"} alt="A family waiting on a train platform" />
+                                <img src={seats} alt="seats" />
                             </picture>
                         </div>
 

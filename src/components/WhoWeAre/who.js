@@ -1,6 +1,10 @@
 import Section from "../../common/section";
 import "../HowWeWork/how.css";
-import "./who.css"
+import "./who.css";
+import meng0 from "../../img/svg/meng0.jpg";
+import meng1 from "../../img/svg/meng1.jpg";
+
+
 
 const Who = () => {
     return (
@@ -48,7 +52,7 @@ const Who = () => {
                                         <span className="a-profileCard__subtitle">Founder</span>
                                         </div>
                                         <img
-                                            src={process.env.PUBLIC_URL + "/img/svg/meng0.jpg"}
+                                            src={meng0}
                                             alt="George Soros sitting at a desk"
                                             title=""
                                         />
@@ -86,7 +90,7 @@ const Who = () => {
                                         <span className="a-profileCard__subtitle"></span>
                                         </div>
                                         <img
-                                            src={process.env.PUBLIC_URL + "/img/svg/meng1.jpg"}
+                                            src={meng1}
                                             alt="George Soros sitting at a desk"
                                             title=""
                                         />

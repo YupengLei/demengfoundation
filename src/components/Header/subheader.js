@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import logo from "../../img/svg/demeng.svg";
 
 
 
@@ -41,7 +42,7 @@ const SubHeader = (props) => {
 
                         <a href="https://www.demengfoundation.org/" className="g-header__logo" aria-label="Back to the homepage">
                             <span className="visually-hidden">Demeng Foundation</span>
-                            <SvgIcon width="100%" height="100%" src="demeng.svg" />
+                            <SvgIcon width="100%" height="100%" src={logo} />
                         </a>
 
 

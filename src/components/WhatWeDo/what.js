@@ -1,6 +1,13 @@
 import "./what.css";
 import Section from "../../common/section";
 import Where from "./where";
+import img2018 from "../../img/svg/2018.jpg";
+import img2019 from "../../img/svg/2019.jpg";
+import img2020 from "../../img/svg/2020.jpg";
+import img2021 from "../../img/svg/2021.jpg";
+import img2022 from "../../img/svg/2022.jpg";
+
+
 
 const What = () => {
     const scrollTo = (id) => {
@@ -48,7 +55,7 @@ const What = () => {
                                 </div>
                                 <span className="a-timelinePreview__date">2018</span>
                                 <figure className="a-timelinePreview__image">
-                                    <img src={process.env.PUBLIC_URL + "/img/svg/2018.jpg"} alt="2018" />                
+                                    <img src={img2018} alt="2018" />                
                                 </figure>
                             </div>
                             <div
@@ -61,7 +68,7 @@ const What = () => {
                                 <span className="a-timelinePreview__date">2019</span>
                                 <figure className="a-timelinePreview__image">
                                     <img
-                                        src={process.env.PUBLIC_URL + "/img/svg/2019.jpg"}
+                                        src={img2019}
                                         alt="2019"
                                     />
                                 </figure>
@@ -75,7 +82,7 @@ const What = () => {
                                 </div>
                                 <span className="a-timelinePreview__date">2020</span>
                                 <figure className="a-timelinePreview__image">
-                                    <img src={process.env.PUBLIC_URL + "/img/svg/2020.jpg"}
+                                    <img src={img2020}
                                     alt="2020"
                                     />
                                 </figure>
@@ -89,7 +96,7 @@ const What = () => {
                                 </div>
                                 <span className="a-timelinePreview__date">2021</span>
                                 <figure className="a-timelinePreview__image">
-                                    <img src={process.env.PUBLIC_URL + "/img/svg/2021.jpg"}
+                                    <img src={img2021}
                                     alt="2021"
                                     />
                                 </figure>
@@ -104,7 +111,7 @@ const What = () => {
                                 <span className="a-timelinePreview__date">2022</span>
                                 <figure className="a-timelinePreview__image">
                                     <img
-                                        src={process.env.PUBLIC_URL + "/img/svg/2022.jpg"}
+                                        src={img2022}
                                         alt="2022"
                                     />
                                 </figure>

@@ -2,6 +2,12 @@ import "./partner.css";
 import Section from "../../common/section";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import club from "../../img/svg/club.jpeg";
+import curtis from "../../img/svg/curtis.png";
+import prisms from "../../img/svg/curtis.png";
+
+
+
 
 
 const Partner = () => {
@@ -23,7 +29,7 @@ const Partner = () => {
                 <div>
 
                     <div className="myCarousel">
-                        <img src={process.env.PUBLIC_URL + "/img/svg/prisms.png"} alt="prisms" />
+                        <img src={prisms} alt="prisms" />
                         <p>
                             Thank you for your support and endorsement of PRISMS. Your generous contribution has made the operation of our school possible, and leads us to look forward to a prosperous future! Donors like you offer hope and encouragement to our school community. On behalf of PRISMS, we would like to express our heartfelt gratitude!
                         </p>
@@ -34,7 +40,7 @@ const Partner = () => {
 
                 <div>
                     <div className="myCarousel">
-                        <img src={process.env.PUBLIC_URL + "/img/svg/curtis.png"} alt="curtis" />
+                        <img src={curtis} alt="curtis" />
 
                         <p>
                             On behalf of all of us at Curtis, I want to express my gratitude for generous pledge from the Demeng Charity Trust to establish two endowed student fellowships at Curtis.
@@ -45,7 +51,7 @@ const Partner = () => {
 
                 <div>
                     <div className="myCarousel">
-                        <img src={process.env.PUBLIC_URL + "/img/svg/club.jpeg"} alt="launchX club" />
+                        <img src={club} alt="launchX club" />
 
                         <p>
                             Thank you for your donation to LaunchX Club, you are the reason that we can support students from eight countries in Asia Pacific region to learn entrepreneurship and build startups along with different themes each year!
