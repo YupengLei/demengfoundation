@@ -87,6 +87,7 @@ export const Label = styled("span")`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  cursor: pointer;
 `;
 
 export const Outline = styled(MenuOutlined) <any>`

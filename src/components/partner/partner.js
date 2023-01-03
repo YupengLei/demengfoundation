@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import club from "../../img/svg/club.jpeg";
 import curtis from "../../img/svg/curtis.png";
-import prisms from "../../img/svg/curtis.png";
+import prisms from "../../img/svg/prisms.png";
 
 
 

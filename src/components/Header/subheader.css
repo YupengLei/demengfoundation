@@ -217,7 +217,7 @@ screen and (max-width: 989px) and (-ms-high-contrast: active) {
 .g-header__search__close span {
     position: absolute;
     visibility: hidden;
-    pointer-events: none
+    /*pointer-events: none*/
 }
 
 .g-header__nav__link--search,
