@@ -24,18 +24,12 @@ const SubHeader = () => {
     const [visible, setVisibility] = useState(false);
 
     const showDrawer = () => {
-        console.log("open")
         setVisibility(!visible);
     };
 
     const onClose = () => {
-        console.log("close")
         setVisibility(!visible);
     };
-
-    /*const clickTest = () => {
-        console.log("it click");
-    }*/
 
     const scrollTo = (id) => {
         const element = document.getElementById(id);
@@ -116,13 +110,13 @@ const SubHeader = () => {
                         </nav>
 
                        
-                        <Drawer closable={false} open={visible} onClose={onClose}>
+                        <Drawer closable={false} open={visible} onClose={onClose} style={{zIndex: "10000"}}>
                                 
                             <Col style={{ marginBottom: "2.5rem" }}>
                                 
-                                <Label onClick={onClose}>
-                                    <Col span={12}>
-                                        <Menu >Menu</Menu>
+                                <Label onClick={onClose} >
+                                    <Col span={12}  >
+                                        <Menu >MENU</Menu>
                                     </Col>
                                     <Col span={12}>
                                         <Outline />

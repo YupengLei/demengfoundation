@@ -66,6 +66,7 @@ export const Menu = styled("h5")`
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
+  margin-bottom: -4px
 `;
 
 export const CustomNavLinkSmall = styled(NavLink)`
@@ -86,7 +87,7 @@ export const Label = styled("span")`
   text-align: right;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   cursor: pointer;
 `;
 
