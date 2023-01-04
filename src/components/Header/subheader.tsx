@@ -31,8 +31,8 @@ const SubHeader = () => {
         setVisibility(!visible);
     };
 
-    const scrollTo = (id) => {
-        const element = document.getElementById(id);
+    const scrollTo = (id: string) => {
+        const element = document.getElementById(id) as HTMLDivElement;
         element.scrollIntoView({
             behavior: "smooth",
         });
