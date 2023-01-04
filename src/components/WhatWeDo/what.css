@@ -269,48 +269,48 @@
 .a-timelinePreview__image {
     flex: 0 0 auto;
     position: relative;
-    order: 2
+    order: 2;
 }
 
 @media screen and (max-width: 413px) {
     .a-timelinePreview__image {
         width: calc((((100vw - 150px) / 6) * 2) + 20px);
-        margin-left: 20px
+        /*margin-left: 20px*/
     }
 }
 
 @media screen and (min-width: 414px) and (max-width: 649px) {
     .a-timelinePreview__image {
         width: calc((((100vw - 160px) / 6) * 2) + 20px);
-        margin-left: 20px
+        /*margin-left: 20px*/
     }
 }
 
 @media screen and (min-width: 650px) and (max-width: 989px) {
     .a-timelinePreview__image {
         width: calc((((100vw - 410px) / 12) * 2) + 30px);
-        margin-left: 30px
+        /*margin-left: 30px*/
     }
 }
 
 @media screen and (min-width: 990px) and (max-width: 1299px) {
     .a-timelinePreview__image {
         width: calc((((100vw - 560px) / 12) * 2) + 40px);
-        margin-left: 40px
+        /*margin-left: 40px*/
     }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1519px) {
     .a-timelinePreview__image {
         width: calc((((100vw - 560px) / 12) * 2) + 40px);
-        margin-left: 40px
+        /*margin-left: 40px*/
     }
 }
 
 @media screen and (min-width: 1520px) {
     .a-timelinePreview__image {
         width: 206.666666667px;
-        margin-left: 40px
+        /*margin-left: 40px*/
     }
 }
 

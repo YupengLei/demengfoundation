@@ -33,7 +33,19 @@
     font-size: 27px;
     line-height: 25px;
     font-weight: 500;
-    text-transform: uppercase
+    text-transform: uppercase;
+    text-align: left;
+}
+
+
+.o-contentBlocks__sidebar .o-contentLayout__sidebarTitle {
+    line-height: 38px
+}
+
+@media screen and (min-width: 990px) {
+    .o-contentBlocks__sidebar .o-contentLayout__sidebarTitle {
+        margin-top: -10px
+    }
 }
 
 .o-contentBlocks__body {
@@ -2345,4 +2357,17 @@ screen and (-ms-high-contrast: active) {
 
 .m-regionGraph__value {
     transition: padding 1s cubic-bezier(0.545, 0.03, 0.395, 0.965)
+}
+
+/*********************/
+@media screen and (max-width: 650px) {
+    .o-contentBlocks__sidebar {
+        width: 100%;
+    }
+
+    .o-contentBlocks__body {
+        margin-left: 0;
+    }
+
+    
 }

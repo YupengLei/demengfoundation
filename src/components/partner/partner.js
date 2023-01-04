@@ -7,23 +7,14 @@ import curtis from "../../img/svg/curtis.png";
 import prisms from "../../img/svg/prisms.png";
 
 
-
-
-
-const Partner = () => {
+const Letters = () => {
     return (
-        <div className="partner">
-            <Section
-                className="o-contentBlocks__container o-contentBlocks__container--noBorder"
-                title="Voices From Partners"
-                description="The Demeng Foundation is very proud of what we have accomplished with our partners around the world. Their voices inspire our organization work harder for our mission."
-            />
-            <Carousel
+        <Carousel
                 showArrows={true}
                 infiniteLoop={true}
                 showThumbs={false}
                 showStatus={false}
-                autoPlay={true}
+                autoPlay={false}
                 interval={6100}
             >
                 <div>
@@ -41,39 +32,45 @@ const Partner = () => {
                 <div>
                     <div className="myCarousel">
                         <img src={curtis} alt="curtis" />
-
+                        <div className="p-wrapper">
                         <p>
                             On behalf of all of us at Curtis, I want to express my gratitude for generous pledge from the Demeng Charity Trust to establish two endowed student fellowships at Curtis.
 
                         </p>
+                        </div>
+                        
                     </div>
                 </div>
 
                 <div>
                     <div className="myCarousel">
                         <img src={club} alt="launchX club" />
-
+                        <div className="p-wrapper">
                         <p>
                             Thank you for your donation to LaunchX Club, you are the reason that we can support students from eight countries in Asia Pacific region to learn entrepreneurship and build startups along with different themes each year!
                         </p>
+                        </div>
                     </div>
                 </div>
 
                 <div>
                     <div className="myCarousel">
                         <h3>Student H.</h3>
+                        <div className="p-wrapper">
                         <p>
                             I am currently in my fourth year at Curtis (time flies!) and I start college in the fall of 2023.
 
                             I feel so thankful to be studying at such a prestigious school along with so many musicians and friends I look up to. I want to sincerely thank you for your support and involvement with Curtis.
 
                         </p>
+                        </div>
                     </div>
                 </div>
 
                 <div>
                     <div className="myCarousel">
                         <h3>Student T.</h3>
+                        <div className="p-wrapper">
                         <p>
                             I’d like to take this opportunity to express my sincere thanks to you for the timely donation you rendered me for my best way studying at this great school.
 
@@ -83,12 +80,30 @@ const Partner = () => {
 
 
                         </p>
+                        </div>
                     </div>
                 </div>
             </Carousel>
+    )
+}
+
+
+const Partner = () => {
+
+    return (
+        <div className="partner">
+            <Section
+                className="o-contentBlocks__container o-contentBlocks__container--noBorder"
+                title={"Voices \n From \n Partners"}
+                multipleLine={true}
+                description="The Demeng Foundation is very proud of what we have accomplished with our partners around the world. Their voices inspire our organization work harder for our mission."
+            />
+            <Letters />
 
         </div>
     )
 }
 
 export default Partner;
+
+

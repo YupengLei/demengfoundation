@@ -166,8 +166,8 @@
 
 .a-profileCard__image img {
     display: block;
-    /*width: 100%;*/
-    width: 350px;
+    width: 30%;
+    /*width: 350px;*/
     transition: transform 2.15s cubic-bezier(0, 0.55, 0.155, 0.995);
     border: 0 none;
 }
@@ -185,7 +185,24 @@
     width: 100%;
 }
 
+.p-title h3 {
+    font-size: 40px;
+}
+
 .a-profileCard__image {
     display: flex;
+}
+
+/***********/
+@media screen and (max-width: 650px) {
+
+    .o-contentLayout__sidebarTitle {
+        float: none;
+    }
+
+    .m-cardsList .no-list {
+        margin-left: 0;
+        margin-top: 50px;
+    }
 }
 

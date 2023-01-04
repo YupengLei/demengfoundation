@@ -17,7 +17,7 @@ const Who = () => {
 
 
             <div className="o-contentBlocks__full">
-                <div data-behavior="staff" data-base-url="/who-we-are">
+                <div data-behavior="staff" data-base-url="/who-we-are" className="leadership">
                     <h3 className="o-contentLayout__sidebarTitle o-contentLayout__sidebarTitle--keyline">Leadership</h3>
 
                     <section className="m-cardsList  m-cardsList--mainLeadership ">
@@ -88,7 +88,7 @@ const Who = () => {
                                     </div>
                                     <figure className="a-profileCard__image">
                                         <div className="p-title">
-                                        <h3>SALLY Yiran Deng</h3>
+                                        <h3>SALLY YIRAN DENG</h3>
                                         <span className="a-profileCard__subtitle"></span>
                                         </div>
                                         <img
