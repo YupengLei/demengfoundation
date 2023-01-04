@@ -582,7 +582,6 @@ screen and (-ms-high-contrast: active) {
 
 .g-footer__highlights {
     position: relative;
-    position: relative;
     padding-top: 40px;
     flex: 0 0 auto;
 }
@@ -617,7 +616,7 @@ screen and (-ms-high-contrast: active) {
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 10249px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .g-footer__highlight {
         width: calc((100vw - 90px) / 2);
         margin-left: 30px
@@ -1086,8 +1085,19 @@ screen and (-ms-high-contrast: active) {
     cursor: pointer;
 }
 
+/************/
 
+@media screen and (max-width: 650px) {
+    .g-row {
+        display: block;
+    }
 
+    .g-footer__highlight {
+        width: 90%;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+}
 
 
 
