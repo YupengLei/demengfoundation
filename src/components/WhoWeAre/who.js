@@ -39,10 +39,9 @@ const Who = () => {
                                             <p className="a-profileCard__description">
                                         Sponsored the first MIT LaunchX Asian Competition in 2018;</p>
                                         <p className="a-profileCard__description">Sponsored the MIT LaunchX Global Competition in 2019 (Thailand);</p>
-                                        <p className="a-profileCard__description">
-                                        Sponsored the Demeng Music Performance Endowed Fund in University of Pennsylvania, Arts and Sciences in 2020;</p>
+                                        
                                         <p className="a-profileCard__description">Sponsored 2022 S.-T. Yau High School Science Award (North America);</p>
-                                        <p className="a-profileCard__description">Donated to MIT, University of Pennsylvania, Curtis Music School, Princeton International School of Mathematics and Science, Tsinghua University, Peking University, Guangdong University of Foreign Studies, Guangdong Jiaying University and others.
+                                        <p className="a-profileCard__description">Donated to MIT, Princeton International School of Mathematics and Science, Tsinghua University, Peking University, Guangdong University of Foreign Studies, Guangdong Jiaying University and others.
 
                                         </p>
                                     </div>
