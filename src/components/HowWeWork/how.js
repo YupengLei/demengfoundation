@@ -266,7 +266,7 @@ const How = () => {
                     description="In order to be eligible for a Demeng Foundation scholarship, one must be a current high school or home-school senior planning to graduate from a school or program during the academic year in which application is made. Additionally, students must meet any one of the the followings: 
                         1. GPA scores 3.9+; 
                         2. Toefl scores 110+, or SAT scores 1500+, or ACT scors 34+;
-                        3. Admitted to the International Olympic Competition training camp such as IMO, IPHO, ICHO, or finalist of ISEF, or qualifying AIME of AMC, or finalist of Qiu Cheng Tong Highschool Science Award, or medal winner of USACO;
+                        3. Admitted to the International Olympic Competition training camp such as IMO, IPHO, ICHO, or finalist of ISEF, or qualifying AIME of AMC, or finalist of S. -T Yau High School Science Award, or medal winner of USACO;
                         4. Writting award winner of New York Times, John Locke Essay Competition, Scholastic Art and Writing Awards, or Marshall Society;
                         5. Admission offer from top summer colleges such as ROSS, RSI, SSP, SSHI."
                 />
