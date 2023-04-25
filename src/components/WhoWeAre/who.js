@@ -69,8 +69,3 @@ const Who = () => {
 }
 
 export default Who;
-
-
-/*
-
-*/
