@@ -7,7 +7,7 @@ import meng0 from "../../img/svg/meng0.jpg";
 
 const Who = () => {
     return (
-        <div>
+        <div style={{marginTop: "-200px"}}>
             <Section
                 className="o-contentBlocks__container o-contentBlocks__container--noBorder"
                 title="Who We Are"
